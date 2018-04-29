@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+nav a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+nav a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+nav a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+footer{
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer p{
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    text-decoration: none;
+}
+
+.page {
+  padding-top: 30px;
+}
+
+
+#portfolio{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#portfolio article{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+}
+
+article h2, p{
+    padding-left: 10px;
+}
+
+#contact{
+    padding: 30px;
+    text-align:center;
+}
+
+#contact img{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+
+@media screen and (max-width: 1260px){
+    #portfolio{
+        grid-template-columns: 350px 350px 350px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    #portfolio{
+        grid-template-columns: 400px 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #portfolio{
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    nav a{
+      float: none;
+      width: 100%;
+    }
+    #portfolio{
+        grid-template-columns: 320px;
+    }
+}
+
+      
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

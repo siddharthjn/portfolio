@@ -64,7 +64,22 @@ footer p{
 
 #portfolio article{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white;
 }
+
+#portfolio article:hover{
+    animation: pulse 3s infinite;
+    animation-direction: alternate;
+    -webkit-animation: pulse 3s infinite;
+    -webkit-animation-direction: alternate;
+}
+
+/* #firstArticle{
+    animation: pulse 3s infinite;
+    animation-direction: alternate;
+    -webkit-animation: pulse 3s infinite;
+    -webkit-animation-direction: alternate; 
+} */
 
 article a{
     text-decoration: none;
@@ -83,6 +98,8 @@ article h2, p{
 #contact img{
         animation: shake 0.5s;
         animation-iteration-count: infinite;
+        -webkit-animation: shake 0.5s;
+        -webkit-animation-iteration-count: infinite;
     }
 
 
@@ -128,3 +145,13 @@ article h2, p{
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+  @keyframes pulse {
+    0% {
+      background-color:white;
+    }
+    100% {
+      background-color: rgb(150, 57, 52);
+    }
+  }
+

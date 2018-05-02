@@ -72,7 +72,7 @@ footer p{
 #portfolio{
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-gap: 10px;
+    grid-gap: 30px;
     justify-content: center;
     padding-bottom: 30px;
 }
@@ -128,19 +128,21 @@ article h2, p{
 
 @media screen and (max-width: 1260px){
     #portfolio{
-        grid-template-columns: 350px 350px 350px;
+        grid-template-columns: 310px 310px 310px;
     }
 }
 
 @media screen and (max-width: 980px){
     #portfolio{
         grid-template-columns: 400px 400px;
+        grid-gap: 20px;
     }
 }
 
 @media screen and (max-width: 768px){
     #portfolio{
         grid-template-columns: 300px 300px;
+        grid-gap: 10px;
     }
 }
 

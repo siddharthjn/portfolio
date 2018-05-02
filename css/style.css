@@ -13,14 +13,14 @@ body{
 
 nav {
     overflow: hidden;
-    background-color: #333; /* Dark background color */
+    background-color: #000; /* Dark background color */
 }
 
 /* Style the navigation bar links */
 nav a {
     float: left; /* Make sure that the links stay side-by-side */
     display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
+    color: #fff; /* White text color */
     text-align: center; /* Center the text */
     padding: 14px 20px; /* Add some padding */
     text-decoration: none; /* Remove underline */
@@ -34,12 +34,27 @@ nav a.right {
 /* Change color on hover/mouse-over */
 nav a:hover {
     background-color: #ddd; /* Grey background color */
-    color: black; /* Black text color */
+    color: #000; /* Black text color */
+}
+
+.headerImg{
+    background-color: #fff;
+    background-image: url(../assets/footerImg.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+    height:100px;
 }
 
 footer{
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
 }
 
 footer p{
@@ -64,7 +79,7 @@ footer p{
 
 #portfolio article{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color:white;
+    background-color:#e7e8ea;
     border-radius: 12px;
 }
 
@@ -76,7 +91,7 @@ footer p{
 }
 
 article img {
-  border-radius: 12px, 12px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 article a{
@@ -91,6 +106,8 @@ article h2, p{
 #contact{
     padding: 30px;
     text-align:center;
+    background-color: #000;
+    color: #fff;
 }
 
 #contact img{
@@ -99,6 +116,14 @@ article h2, p{
         -webkit-animation: shake 0.5s;
         -webkit-animation-iteration-count: infinite;
     }
+
+.footerDecorator {
+    height: 100px;
+    background-color: #fff;
+    background-image: url(../assets/footerImg.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;}
 
 
 @media screen and (max-width: 1260px){
@@ -146,7 +171,7 @@ article h2, p{
 
   @keyframes pulse {
     0% {
-      background-color:white;
+      background-color:e7e8ea;
     }
     100% {
       background-color: rgb(150, 57, 52);

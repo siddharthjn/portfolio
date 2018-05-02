@@ -65,6 +65,7 @@ footer p{
 #portfolio article{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color:white;
+    border-radius: 12px;
 }
 
 #portfolio article:hover{
@@ -74,12 +75,9 @@ footer p{
     -webkit-animation-direction: alternate;
 }
 
-/* #firstArticle{
-    animation: pulse 3s infinite;
-    animation-direction: alternate;
-    -webkit-animation: pulse 3s infinite;
-    -webkit-animation-direction: alternate; 
-} */
+article img {
+  border-radius: 12px, 12px;
+}
 
 article a{
     text-decoration: none;
